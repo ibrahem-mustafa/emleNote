@@ -1,0 +1,88 @@
+extends layout
+
+block content
+	.pageContent
+		.pageHeader.text-center
+			.overlay
+				.container
+					.row
+						.content.col-12
+							h1 Surgeries
+		.container
+			.row
+				.sb.col-sm(style='margin-top:30px')
+					form.col-sm-12(method='post' action='/ad')
+						.row
+							.col-sm-8.col-md-8
+								.form-group(style='margin-bottom : 0')
+									input#SearchInput.form-control.sbInput(type='text', placeholder='Search By Doctor Name...' style='border-radius : 0' name='search' autocomplete='off')
+								.sbContent.col-sm
+									ul
+										each doc in doctors
+											li= doc
+
+							.col-sm-4.col-md-4
+								.form-group
+									input.btn.btn-primary(type='submit' value='Search' style='width : 80%')
+
+
+
+
+
+
+
+		.container
+			.content
+
+				.row
+					if  show
+						h2.col-sm-12.text-center(style='margin-top : 30px;') Latest Surgeries
+						each s in show
+							.col-sm-12.line(style='left : 0;background: #0091CE ')
+							.col-sm-12.slide
+								.slideContent.col-sm-12.text-left
+									.row
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Doctor
+										.col-sm-s12.col-md-8.slideRight
+											p= s.name
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Surgery Date
+										.col-sm-s12.col-md-8.slideRight
+											p=s.date
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Surgery Location
+										.col-sm-s12.col-md-8.slideRight
+											p=s.location
+										.col-sm-s12.col-md-4.slideLeft.fix
+											h5 Surgery Description
+										.col-sm-s12.col-md-8.slideRight
+											p=s.desc
+
+					else
+						h2.col-sm-12.text-center(style='margin-top : 30px;') Results
+						each surge in surgeries
+							.col-sm-12.line(style='left : 0;background: #0091CE ')
+							.col-sm-12.slide
+								.slideContent.col-sm-12.text-left
+									.row
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Doctor
+										.col-sm-s12.col-md-8.slideRight
+											p= surge.name
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Surgery Date
+										.col-sm-s12.col-md-8.slideRight
+											p=surge.date
+										.col-sm-s12.col-md-4.slideLeft
+											h5 Surgery Location
+										.col-sm-s12.col-md-8.slideRight
+											p=surge.location
+										.col-sm-s12.col-md-4.slideLeft.fix
+											h5 Surgery Description
+										.col-sm-s12.col-md-8.slideRight
+											p=surge.desc
+
+
+
+

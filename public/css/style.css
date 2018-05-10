@@ -1,0 +1,344 @@
+/****** GLOBAL ******/
+
+*
+{
+    font-family: Montserrat,sans-serif;
+}
+
+.line
+{
+    position: relative;
+    width:75%;
+    height: 1px;
+    margin: 30px auto;
+    background: #DDD;
+    left: 12.5%;
+    clear: both;
+}
+
+.line.full
+{
+    width : 100%;
+    left: 0;
+}
+
+.line.l
+{
+    margin: 60px auto;
+}
+
+.mainColor
+{
+    color : #0091CE;
+}
+
+.content
+{
+    padding: 0px 15px 60px;
+}
+
+.content h2
+{
+    font-family: Raleway, sans-serif;
+    font-size : 32px;
+    font-weight: 700;
+    word-spacing: 2px;
+    color : #0091CE;
+}
+
+.styledBtn .btn
+{
+    min-width : 110px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 1.2px;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 0;
+    text-decoration: none;
+    color : #0091CE;
+    font-size: 18px;
+    margin: 30px 15px;
+    box-shadow: 0 0 5px #FFF;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out ;
+    -ms-transition: all 0.2s ease-in-out ;
+    -o-transition: all 0.2s ease-in-out ;
+    transition: all 0.2s ease-in-out ;
+}
+
+.styledBtn .btn:hover
+{
+    box-shadow: 0 0 15px #FFF;
+}
+
+.navbar
+{
+    background: #0091CE!important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body:not(.index) .navbar > *,
+body:not(.index) .navbar a
+{
+    color : #FFFFFF!important;
+    text-decoration: none;
+}
+
+.navbar a
+{
+    margin-left: 30px;
+}
+
+.alert
+{
+    margin: 15px auto auto;
+    width: 80%;
+}
+
+.alert-error
+{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+
+/****** END GLOBAL ******/
+
+/*********************************** *********** ******************/
+/******************************** ********************************/
+
+/****** INDEX PAGE ******/
+
+.index .navbar
+{
+    background: #FFF!important;
+}
+
+.index .pageHeader,
+.ad.home .pageHeader
+{
+    background: url("./../images/index.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    min-height : 500px
+
+}
+
+.index .pageHeader .overlay,
+.ad.home .pageHeader .overlay
+{
+    height: 100%;
+    background-color: rgba(0, 145, 206, 0.6);
+    min-height : 500px
+}
+
+.index .pageHeader .content,
+.ad.home .pageHeader .content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.index .pageHeader .content h1,
+.ad.home .pageHeader .content h1
+{
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 53px;
+    margin-bottom: 0;
+}
+
+.index .pageHeader .content p
+{
+    width: 75%;
+    margin: auto;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+
+/****** END INDEX PAGE ******/
+
+/****** REGISTER PAGE ******/
+
+
+.register .form-group,
+.login .form-group,
+.addSurg .form-group
+{
+    margin: auto auto 30px;
+    max-width: 500px;
+}
+
+.register .form-group input,
+.login .form-group input,
+.addSurg .form-group input,
+.addSurg .form-group textarea
+{
+    text-align: center;
+}
+
+/****** END REGISTER PAGE ******/
+
+/*********************************** *********** ******************/
+/******************************** ********************************/
+
+/****** SURGERIES PAGE ******/
+
+.sb
+{
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+}
+
+.sb form
+{
+    text-align: center;
+}
+
+.sb form input
+{
+    min-height : 60px;
+    margin-bottom : 15px
+}
+
+.sb .sbContent
+{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    padding : 0 15px;
+    z-index: 9;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.sb .sbContent ul
+{
+    padding: 0;
+    list-style: none;
+    border: 1px solid #CCC;
+    background: #FFFFFF;
+}
+
+.sb .sbContent ul li
+{
+    width : 100%;
+    padding: 15px;
+    border-bottom : 1px solid rgba(0, 145, 206, 0.5);
+    font-size : 18px;
+    -webkit-transition: all 0.2s linear ;
+    -moz-transition: all 0.2s linear ;
+    -ms-transition: all 0.2s linear ;
+    -o-transition: all 0.2s linear ;
+    transition: all 0.2s linear ;
+
+}
+
+.sb .sbContent ul li:last-of-type
+{
+    border-bottom : 0
+}
+
+
+.sb .sbContent ul li:hover
+{
+    background : rgba(0, 145, 206, 0.3)
+}
+
+.ad .slide
+{
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ad .slide .slideLeft,
+.ad .slide .slideRight
+{
+    padding: 20px 0 20px 20px;
+}
+
+.ad .slide .slideLeft.fix
+{
+    border-bottom : none
+}
+
+
+
+.ad .slide .slideRight:last-of-type
+{
+    border-bottom : none
+}
+
+.ad .slide .slideLeft > *,
+.ad .slide .slideRight > *
+{
+    height: 100%;
+    margin: 0;
+}
+
+.ad .slide .slideLeft
+{
+    border-bottom : 1px solid #0091CE;
+}
+
+.ad .slide .slideRight
+{
+    border-bottom : 1px solid #CCC
+}
+
+.ad .slide .slideLeft h5
+{
+    font-family: Raleway, sans-serif;
+    font-size : 22px;
+}
+
+.ad .slide p
+{
+    color : #555;
+}
+
+.ad.home .pageHeader
+{
+    background: url("../images/adHome.jpg") center center no-repeat;
+    background-size: cover;
+}
+.ad.home .pageHeader .overlay
+{
+    background : rgba(0,0,0,0.4)
+}
+
+
+/****** END SURGERIES PAGE ******/
+
+/*********************************** *********** ******************/
+/******************************** ********************************/
+
+/****** MEDIA QUERY ******/
+
+@media (min-width: 1024px) {
+    .index {
+        overflow: hidden;
+    }
+}
+
+/****** END MEDIA QUERY ******/

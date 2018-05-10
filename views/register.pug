@@ -1,0 +1,45 @@
+extends layout
+
+block content
+	.container
+		.row
+			.form.col-sm
+				.content.text-center
+					h2.mt-5 Register
+					.line.full.l
+					.row
+
+						form(method='post', action='/users/register/doc' class='col-sm-12 col-md-6')
+							.col-sm-12
+								h5 DOCTOR
+							.col.line(style='left : 0')
+							.form-group
+								input#name.form-control(type='text', placeholder='User Name',name='name')
+							.form-group
+								input#email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email Address',name='email')
+							.form-group
+								input#depart.form-control(type='text', placeholder='Department', name = 'dept')
+							.form-group
+								input#pass1.form-control(type='password', placeholder='Password', name = 'pass1')
+							.form-group
+								input#pass2.form-control(type='password', placeholder='Confirm Password' , name = 'pass2')
+							button.btn.btn-primary(type='submit') Register
+
+
+
+						form(method='post', action='/users/register/stu' class='col-sm-12 col-md-6')
+							.col-sm-12
+								h5 Student
+							.col.line(style='left : 0')
+							.form-group
+								input#name2.form-control(type='text', placeholder='User Name', name='name')
+							.form-group
+								input#email2.form-control(type='email', aria-describedby='emailHelp', placeholder='Email Address',name='email')
+							.form-group
+								input#depart2.form-control(type='number', placeholder='Academic Year', name = 'year')
+							.form-group
+								input#pass12.form-control(type='password', placeholder='Password', name = 'pass1')
+							.form-group
+								input#pass22.form-control(type='password', placeholder='Confirm Password' , name = 'pass2')
+							button.btn.btn-primary(type='submit') Register
+

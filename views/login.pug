@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	.container
+		.row
+			.form.col-sm
+				.content.text-center
+					h2.mt-5 Login
+					.line.full.l
+					form(method='post', action='/users/login')
+						.form-group
+							input#name.form-control(type='text', placeholder='User Name' name = 'username')
+						.form-group
+							input#pass1.form-control(type='password', placeholder='Password' name = 'password')
+						button.btn.btn-primary(type='submit') Login
+

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	.container
+		.row
+			.form.col-sm
+				.content.text-center
+					h2.mt-5 Add Surgery
+					.line.full.l
+					form(method='post', action='/ad/add')
+						if user.type === 'doc'
+							.form-group
+								input#name.form-control(type='text', name = 'name' value = user.name)
+						else
+							.form-group
+								input#name.form-control(type='text', placeholder='Doctor Name', name = 'name')
+
+						.form-group
+							input#date.form-control(type='text', placeholder='Surgery Date', name = 'date')
+						.form-group
+							input#location.form-control(type='text' placeholder='Surgery Location' name = 'location')
+						.form-group
+							textarea#desc.form-control(rows='3' placeholder='Surgery Description...' name='desc')
+						button.btn.btn-primary(type='submit') Add Surgery
